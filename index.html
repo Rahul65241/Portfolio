@@ -437,22 +437,22 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form">
-                                <form>
+                                <form action="formdata.php" method="post">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Your Name" />
+                                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required />
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="email" class="form-control" placeholder="Your Email" />
+                                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject" />
+                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required />
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
                                     </div>
-                                    <div><button class="btn" type="submit">Send Message</button></div>
+                                    <div><button class="btn" value="Submit" type="submit">Send Message</button></div>
                                 </form>
                             </div>
                         </div>
