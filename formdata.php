@@ -24,8 +24,8 @@ $sql = "INSERT INTO contact_form (Name, Email, Subject, Message) VALUES ('$name'
 
 // Execute the query
 if ($conn->query($sql) === TRUE) {
-    echo "Data inserted successfully";
-} else {
+    echo "<script>alert('Data inserted successfully');</script>";
+    echo "<script>window.location.href='index.html';</script>";} else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
